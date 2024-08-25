@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { WelcomePage } from "../pages/WelcomPage";
 import { HomePage } from "../pages/HomePage";
 import { PoemDetail } from "../pages/PoemDetail";
-import { LoginPage } from "../pages/LoginPage";
+import AuthForm from "../pages/AuthForm";
 
 
 const router = createBrowserRouter([
@@ -20,7 +20,11 @@ const router = createBrowserRouter([
     },
     {
       path: "/login",
-      element: <LoginPage />,
+      element: <AuthForm />,
+    },
+    {
+      path: "/Signup",
+      element: <AuthForm />,
     },
   ]);
 
